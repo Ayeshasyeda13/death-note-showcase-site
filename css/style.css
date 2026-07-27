@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+
+:root{
+
+   /* primary colors */
+--primary-Background: #0D0D0D;
+--Secondary-Background: #171717;
+--Cards	:#232323;
+--Text	:#F5F5F5;
+--Secondary-Text:	#A3A3A3;
+
+   /* Accent Colors */
+
+	--Blood-Red :#C1121F;
+	--Dark-Crimson: #9A031E;
+	--Gold-important-titles: #E6C229;
+
+   /* color theme ryuk L  */
+
+	--Purple-Ryuk-theme:#5C5470;
+	--Grey-L-theme:#7F8C8D;
+
+
+/* fonts */
+ --primary-font: 'cinzel', sans-serif;
+
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  
+}
+
+body {
+   line-height: 1.6;
+     min-height: 100vh;
+     background-color: var(--primary-Background);
+}
+
+header {
+   height: 130px;
+   background-color: var(--primary-Background);
+   padding: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  
+  font-style: normal;
+
+}
+
+.navbar ul li {
+   display: inline-block;
+   padding: 15px;
+
+}
+
+li a {
+   text-decoration: none;
+   font-size: 1.6rem;
+   color: var(--Text);
+   letter-spacing: 2px;
+   transition: all 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+   color:var(--Blood-Red);
+  text-decoration: line-through;
+}
+ li {
+   list-style: none;
+}
+
+.nav-logo {
+   height: 100px;
+   margin: 33px;
+   
+}
+.nav-logo:hover {
+  animation: jiggle 0.4s ease-in-out infinite;
+
+ 
+}
+
+@keyframes jiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+  75% { transform: rotate(-3deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+
+.wrapper{
+   border: 1px solid pink;
+   height: 100%;
+   width: auto;
+   color: var(--Text);
+   font-size: 1.5em;
+   padding: 2rem 10%;
+
+  font-family: "emilys candy", cinzel, sans-serif;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+button{
+   cursor: pointer;
+   margin-top: 29px;
+   padding: 18px 40px;
+   text-align: center;
+   font-size: 1.2rem;
+   font-weight: 600;
+   font-family: "emilys candy" , sans-serif;
+   
+   
+}
+
+button:hover{
+
+   color: var(--Text);
+   box-shadow: 0px 0px 30px 2px var(--Purple-Ryuk-theme);
+}
+button:active{
+   color: var(--Text);
+}
+.btn { 
+ 
+   color: var(--Gold-important-titles);
+   background-color: var(--Dark-Crimson);
+   border:none;
+   border-radius: 0.5rem;
+   transition: all 0.3s ease; 
+}
+.wrapper img  {
+
+   height:500px;
+   
+}
+
+h3{
+   font-family: "emilys candy", sans-serif;
+}
