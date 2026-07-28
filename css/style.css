@@ -42,7 +42,7 @@ body {
      min-height: 100vh;
      background-color: var(--primary-Background);
      background-image: linear-gradient(to left bottom, #1c021d, #18021c, #13021b, #0d011a, #070118, #070115, #070012, #06000e, #070009, #070005, #040002, #000000);
-
+   color:#fff;
      overflow-x: hidden;
 }
 
@@ -121,6 +121,11 @@ li a {
    padding:2rem 10%;
    
   font-family: "emilys candy", cinzel, sans-serif;
+
+  display:flex;
+  justify-content: center;
+  align-items: end;
+
 }
 main{
 
@@ -135,15 +140,8 @@ main{
 
 
 
-
-
-
-
-
-
-
-
 button{
+   margin-top: 20px;
    cursor: pointer;
    margin-top: 29px;
    padding: 18px 40px;
@@ -155,8 +153,8 @@ button{
    
 }
 .btn { 
- 
-   color: var(--Gold-important-titles);
+
+   color: var(--Secondary-Text);
    background-color: var(--Dark-Crimson);
    border:none;
    border-radius: 0.5rem;
@@ -164,12 +162,74 @@ button{
 }
 button:hover{
 
-   color: var(--Text);
+   color: var(--Gold-important-titles);
    box-shadow: 0px 0px 30px 2px var(--Purple-Ryuk-theme);
 }
 
+.information {
+   
+   padding: 20px 10%;
+  
+  
+
+   display: flex;
+   justify-content:center;
+   align-items: center;
+   gap: 100px;
+  padding-top: 10%;
+}
 
 
-/* h3{
-   font-family: "emilys candy", sans-serif;
-} */
+.info-discripation{
+  text-align:center;
+animation: 3s ease-in-out 0s 1 intro;
+
+
+}
+
+.info-discripation :nth-child(1) {
+   height: 90px;
+   border: none;
+   padding-bottom: 20px;
+   box-shadow: 0px 0px 0px 0px;
+  
+}
+.info-discripation h4 {
+   color: #ffffffda;
+   padding-bottom: 45px;
+     word-spacing: 8px;
+     font-family: "emilys candy", sans-serif;
+      font-size: 1.5rem;
+ 
+      
+   
+}
+@keyframes intro {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.info-discripation p {
+   font-family: var(--primary-font);
+   font-weight:600;
+   color: var(--Secondary-Text);
+   text-align: right;
+   border-right: 4px solid var(--Dark-Crimson);
+
+   padding-right: 5px;
+}
+.information img {
+   height: 500px;
+
+   width:fit-content;
+   border-radius: 2rem;
+   box-shadow: 0px 0px 9px 3px var(--Gold-important-titles);
+   
+
+
+
+}
