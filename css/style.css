@@ -420,6 +420,7 @@ button:hover {
   align-items:start;
   justify-content: space-between;
   gap: 14px;
+  margin-bottom:2.6em;
 }
 .manga-writer img {
    height: 400px;
@@ -436,6 +437,9 @@ button:hover {
 .manga-writer p{
    font-size: 1em;
    color: var(--Secondary-Text);
+}
+.manga-writer p span{
+   color: #E6C229;
 }
 .wm-qoutes{
 
@@ -465,3 +469,57 @@ button:hover {
    font-size: 1em;
    color: var(--Secondary-Text);
 }
+/* Make the whole page scroll smoothly */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style the button */
+#scrollUpBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed in place even when scrolling */
+  bottom: 20px; /* 20px from the bottom */
+  right: 20px; /* 20px from the right */
+  z-index: 99; /* Make sure it stays on top of other elements */
+  border: none; 
+  outline: none; 
+    background-image: linear-gradient(to left bottom, #1c021d, #18021c, #13021b, #0d011a, #070118, #070115, #070012, #06000e, #070009, #070005, #040002, #000000);
+
+  
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 50%; /* Makes it a circle */
+  font-size: 18px; 
+  transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+/* Change color when you hover over it */
+#scrollUpBtn img:hover {
+  animation: jiggle 0.4s ease-in-out infinite;
+}
+
+@keyframes jiggle {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   25% {
+      transform: rotate(-5deg);
+   }
+
+   50% {
+      transform: rotate(5deg);
+   }
+
+   75% {
+      transform: rotate(-3deg);
+   }
+
+   100% {
+      transform: rotate(0deg);
+   }
+}
+#scrollUpBtn img{
+height: 55px;
+}
+   

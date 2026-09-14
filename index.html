@@ -207,8 +207,8 @@
              
                 <p>Tsugumi Ohba (大場 つぐみ, Ōba Tsugumi) is a Japanese manga writer. They are the writer and creator of
                     Death Note, which they worked on with manga artist Takeshi Obata.</p>
-                <p>Ohba's real identity is a closely guarded secret, and the real name, gender, and date of birth of the
-                    author are undisclosed. Ohba is commonly given male pronouns for English translations, but their
+                <p> <span>Ohba's real identity is a closely guarded secret, and the real name, gender, and date of birth of the author are undisclosed.</span>
+                     Ohba is commonly given male pronouns for English translations, but their
                     gender has not been verified.</p><br>
                        <p class="wm-qoutes">“I decided from the beginning that right and wrong wouldn't be a part of Death Note.”<br> — Tsugumi Ohba</p>
                 </div>
@@ -236,7 +236,36 @@
             </div>
         </div>
     </section>
+<!-- The Scroll Up Button -->
+<button id="scrollUpBtn" title="Go to top"><img src="./assets/images/pngaaa.com-266824.png" alt=""></button>
 
+
+
+
+
+<script>
+    // Get the button element
+const scrollBtn = document.getElementById("scrollUpBtn");
+
+// Listen for scroll events on the window
+window.onscroll = function() {
+  // Show the button if scrolled down more than 300 pixels
+  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+};
+
+// When the user clicks the button, scroll to the top smoothly
+scrollBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+</script>
 </body>
 
 </html>
