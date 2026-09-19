@@ -163,7 +163,7 @@ button {
    margin-top: 20px;
    cursor: pointer;
    margin-top: 29px;
-   padding: 18px 40px;
+   padding: 10px 40px;
    text-align: center;
    font-size: 1.2rem;
    font-weight: 600;
@@ -174,7 +174,7 @@ button {
 
 .btn {
 
-   color: var(--Secondary-Text);
+   color: var(--Gold-important-titles);
    background-color: var(--Dark-Crimson);
    border: none;
    border-radius: 0.5rem;
@@ -184,7 +184,7 @@ button {
 button:hover {
 
    color: var(--Gold-important-titles);
-   box-shadow: 0px 0px 30px 2px var(--Purple-Ryuk-theme);
+   /* box-shadow: 0px 0px 5px 1px var(--Gold-important-titles); */
 }
 
 .information {
@@ -308,8 +308,12 @@ button:hover {
 }
 
 /* From Uiverse.io by Mhyar-nsi */
-/* button {
-  background-color:var(--primary-Background);
+
+
+
+
+.lmtc{
+   background-color:#1c021d;
   color: var(--Gold-important-titles);
   border: none;
   cursor: pointer;
@@ -320,16 +324,12 @@ button:hover {
    font-size: 1rem;
    text-align: center;
    padding: 1px;
-
 }
-.lmtc{
+.lmtc:hover {
+  background-color:#1c021d;
   
-}
-button:hover {
-  background-color: var(--Secondary-Background);
-  box-shadow: 0 0 0 3px #25013b;
-  color: #fff;
-} */
+  
+} 
 
 #characters{
    padding-top: 7%;
@@ -523,3 +523,31 @@ html {
 height: 55px;
 }
    
+footer{
+   height: 15em;
+   width: 100%;
+   background-color: hotpink;
+  font-family: var(--primary-font);
+  text-transform: lowercase;
+  font-weight: 600;
+   padding: 5%;
+   font-size: 1em;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   gap: 20px;
+}
+footer a {
+   text-decoration: none;
+ 
+}
+footer img {
+     cursor: pointer;
+   height :50px;
+  background-color: #E6C229;
+}
+.copyright-stamp {
+   font-size: 0.6rem;
+}
